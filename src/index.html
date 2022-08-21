@@ -12,15 +12,16 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body style="background-color: green;">
+  <body style="background-color: green;" >
       <div class="container w-50 mt-4">
         <div class="bg-white text-dark container" style="width: 250px; height: 350px;">
         <div class="h-25 p-3 fs-4"><p id="upCard"></p></div>
         <div class="h-50 text-center p-4 display-1"><p id="numberCard"></p></div>
         <div class="h-25 p-3 fs-4" style="transform: rotate(180deg);"><p id="footCard"></p></div>
         </div>
-        <br>
-        <button type="button" class="btn btn-light container" onclick="changeCard" id="buttonChange">Change card</button></div>
+        <br id="brTag" onload="cardIn5secs()">
+        <p id="timer" class="bg-warning text-center">A card will be automatically generated every 5 secs</p>
+        <button type="button" class="btn btn-light container" id="buttonChange">Change card</button></div>
       
     </div>
   </body>
